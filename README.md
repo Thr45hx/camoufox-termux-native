@@ -1,5 +1,16 @@
 # camoufox-termux-native
 
+[![platform: Termux/Android](https://img.shields.io/badge/platform-Termux%2FAndroid-3DDC84?logo=android&logoColor=white)](https://termux.dev)
+[![arch: aarch64](https://img.shields.io/badge/arch-aarch64-blue)](#)
+[![no proot / no root](https://img.shields.io/badge/no%20proot-no%20root-success)](#)
+[![license: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
+> **Part of a two-repo set:**
+> **camoufox-termux-native** (this repo — the browser engine) ·
+> [**hermes-camofox-termux**](https://github.com/Thr45hx/hermes-camofox-termux) (the Hermes agent integration)
+>
+> [![companion: hermes-camofox-termux →](https://img.shields.io/badge/companion-hermes--camofox--termux%20%E2%86%92-8A2BE2)](https://github.com/Thr45hx/hermes-camofox-termux)
+
 Run **[Camoufox](https://github.com/daijro/camoufox)** (a Firefox-class, anti-detect browser)
 **natively in Termux on Android — no proot, no root** — and drive it with Playwright's Juggler
 protocol.
