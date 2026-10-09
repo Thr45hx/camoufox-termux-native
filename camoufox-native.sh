@@ -28,9 +28,13 @@ export FONTCONFIG_PATH="$CF/fontconfig/linux"
 export MOZ_DISABLE_CONTENT_SANDBOX=1
 export MOZ_DISABLE_GMP_SANDBOX=1
 export MOZ_ENABLE_WAYLAND=0
+export VK_ICD_FILENAMES="${VK_ICD_FILENAMES:-$CF/g6_glibc_icd.json}"
 # Optional: avoid accidental Debian libc poisoning of parent shells is N/A —
 # we only set LD_LIBRARY_PATH for the exec'd process.
 mkdir -p "$HOME" "$TMPDIR" "$XDG_RUNTIME_DIR"
+if [ ! -s /sdcard/res.conf ]; then
+  printf "nameserver 1.1.1.1\nnameserver 8.8.8.8\nnameserver 8.8.4.4\n" > /sdcard/res.conf 2>/dev/null || true
+fi
 cd "$RUN"
 
 # Critical on Termux: drop Bionic LD_PRELOAD (libtermux-exec-*) before
