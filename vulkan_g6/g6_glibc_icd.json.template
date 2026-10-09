@@ -1,0 +1,7 @@
+{
+    "file_format_version": "1.0.1",
+    "ICD": {
+        "library_path": "@CAMOUFOX_HOME@/vulkan_g6/libvulkan_g6_glibc.so",
+        "api_version": "1.4.317"
+    }
+}
